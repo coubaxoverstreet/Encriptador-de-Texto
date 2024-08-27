@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <a class="head__nav_link" href="index.html" style="color: inherit; text-decoration: none;"><h2><b>Encriptador y Desencriptador de Texto</b></h2></a>  
+            <a class="head__nav_link" href="que-es.html"style="color: inherit; text-decoration: none;"><h4>¿Que es un encriptador de texto?</h4></a>
+            <a class="head__nav_link" href="para-que.html"style="color: inherit; text-decoration: none;"><h4>¿Para que sirve un encriptador de texto?</h4></a>
+        </nav>
+    </header>
+    <main class="main">
+            <section class="section">
+                <div class="main__div_encriptador">
+                    <h3 class="h3">Texto Inicial</h3><br>
+                    <textarea class="main__div_input" id="textoIntroducido"  placeholder="Introduce el texto aquí" cols="50"></textarea>
+                    <p class="main_div_letraspermitidas">Solo se permiten letras minúsculas y sin acentos para encriptar o desencriptar el texto</p><br>
+                </div>
+                <div class="main__div_desencriptador">
+                    <h3 class="h3">Texto Final</h3><br>
+                    <textarea class="main__div_input" id="textoFinal" placeholder="Texto Final" readonly></textarea>
+                    <p class="main_div_letraspermitidas">Solo se permiten letras minúsculas y sin acentos para encriptar o desencriptar el texto</p><br>
+                </div>
+            </section>
+                <div class="main__div_buttons">
+                    <button class="main__div_buttonEncriptar" onclick="encriptar();"  type="button"> Encriptar </button>
+                    <button class="main__div_buttonDesencriptar" onclick="desencriptar();" type="button"> Desencriptar </button> 
+                    <button class="main__div_buttonDesencriptar" onclick="myFunction()">Copiar</button>     
+                </div>
+        
+            <div class="main__div_final">
+                <p>¡Gracias por haber utilizado mi encriptador de texto!</p>
+            </div>
+    </main>
+    <div class="footer__proyecto">
+    <footer>
+        <p>Proyecto diseñado por <a href="https://www.linkedin.com/in/ariel-marquez-it/"style="color:#DCAF32; text-decoration: none;">Ariel Marquez</a> parte del programa ONE de <a href="https://www.aluracursos.com/promo/AprendeConAluraLatam?utm_source=google&utm_medium=cpc&utm_campaign=AL_PRF_Search_Institucional&gad_source=1&gclid=Cj0KCQjwrKu2BhDkARIsAD7GBou62vE-oV6_zSq5Z2-sAaBNPlsy6TsGC7CIp-uxsdtZ5qS6CR3jwZYaAuVrEALw_wcB" style="color: #002c43; text-decoration: none;">ALURA LATAM<img class="footer__proyecto_imagen"src="assets/alura logo.png.png"></a></p>
+        <p>Todos los Derechos Reservados</p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
